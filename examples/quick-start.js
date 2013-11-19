@@ -1,9 +1,9 @@
 var kash = require('../lib/kash');
 
+kash.set('foo', 'bar', 100);
+
+console.log(kash.get('foo'));
+
 setTimeout(function() {
-  console.log("Houdini is... " + kash.get('houdini'));
+  console.log(kash.get('foo'));
 }, 101);
-
-kash.set('houdini', 'disappear', 100);
-
-console.log(kash.get('houdini'));
