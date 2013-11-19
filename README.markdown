@@ -23,19 +23,27 @@ In [Node.js](http://nodejs.org/):
 ``` javascript
 var kash = require("kash");
 ```
-## Usage
+
+## Synopsis
 
 ``` javascript
 setTimeout(function() {
-  // Prints "Houdini is... null" to console
-  console.log("Houdini is... " + kash.get('houdini'));
+  console.log(kash.get('foo'));
 }, 101);
 
-kash.set('houdini', 'disappear', 100);
+kash.set('foo', 'bar', 100);
 
-// Prints "disappear" to console
-console.log(kash.get('houdini'));
+console.log(kash.get('foo'));
 ```
+
+Will print the following in the console:
+
+``` sh
+bar
+null
+```
+
+## API
 
 ### kash.set(key, value [, expires ])
 
