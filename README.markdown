@@ -41,7 +41,7 @@ Set a `key` with a `value`. Optionally, pass in a milliseconds `expires` argumen
 
 ### kash.get(key)
 
-Retrieve the specified `key`. Returns `null` if `key` is not cached.
+Retrieve the `value` for the specified `key`. Returns `null` if `key` does not exist.
 
 ### kash.flush()
 
@@ -49,8 +49,7 @@ Removes the cache of all contents.
 
 ### kash.size()
 
-Returns the size of the cache.
-
+Get the number of entries in the cache.
 
 ## Author
 
