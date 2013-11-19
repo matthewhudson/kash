@@ -2,6 +2,8 @@
 
 #### Fast and efficient in-memory caching for JavaScript
 
+[![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
+
 ## Benchmarks
 
 <img src="https://i.imgur.com/QIlOZhY.png" />
