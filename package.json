@@ -22,12 +22,16 @@
     "url": "https://github.com/matthewhudson/kash/issues"
   },
   "devDependencies": {
+    "vows": "~0.7.0",
     "benchmark": "latest",
     "coffee-script": "latest",
     "grunt": "latest",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-watch": "~0.5.1",
     "grunt-bumpup": "~0.2.0"
+  },
+  "scripts": {
+    "test": "vows tests/suite.coffee --spec"
   },
   "license": "MIT"
 }
