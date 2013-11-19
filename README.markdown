@@ -47,7 +47,7 @@ null
 
 ### kash.set(key, value [, expires ])
 
-Set a `key` with a `value`. Optionally, pass in a milliseconds `expires` argument.
+Set a `key` with a `value`. Set `expires` to remove from cache after specified number of milliseconds. Defaults to `2000` ms.
 
 ### kash.get(key)
 
