@@ -1,6 +1,6 @@
 # KASH
 
-#### Simple and efficient in-memory caching
+#### Simple and efficient in-memory caching for JavaScript
 
 ## Installation
 
