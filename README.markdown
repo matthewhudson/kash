@@ -21,6 +21,36 @@ In [Node.js](http://nodejs.org/):
 ``` javascript
 var kash = require("kash");
 ```
+## Usage
+
+``` javascript
+setTimeout(function() {
+  // Prints "Houdini is... null" to console
+  console.log("Houdini is... " + kash.get('houdini'));
+}, 101);
+
+kash.set('houdini', 'disappear', 100);
+
+// Prints "disappear" to console
+console.log(kash.get('houdini'));
+```
+
+### kash.set(key, value [, expires ])
+
+Set a `key` with a `value`. Optionally, pass in a milliseconds `expires` argument.
+
+### kash.get(key)
+
+Retrieve the specified `key`. Returns `null` if `key` is not cached.
+
+### kash.flush()
+
+Removes the cache of all contents.
+
+### kash.size()
+
+Returns the size of the cache.
+
 
 ## Author
 
