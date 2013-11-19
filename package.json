@@ -2,7 +2,7 @@
   "name": "kash",
   "version": "0.0.5",
   "homepage": "https://github.com/matthewhudson/kash",
-  "description": "Simple and efficient in-memory caching.",
+  "description": "Fast and efficient in-memory caching.",
   "author": {
     "name": "Matthew Hudson",
     "email": "matthud@gmail.com"
