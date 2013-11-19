@@ -4,7 +4,7 @@
 
 ## Benchmarks
 
-<img src="//i.imgur.com/QIlOZhY.png" />
+<img src="https://i.imgur.com/QIlOZhY.png" />
 
 _Benchmarks run on an early 2013 Macbook Pro: 2.7 GHz Intel Core i7, and 16 GB 1600 MHz DDR3_
 
