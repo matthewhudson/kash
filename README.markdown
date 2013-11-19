@@ -43,6 +43,10 @@ Set a `key` with a `value`. Optionally, pass in a milliseconds `expires` argumen
 
 Retrieve the `value` for the specified `key`. Returns `null` if `key` does not exist.
 
+### kash.del(key)
+
+Deletes a `key`.
+
 ### kash.flush()
 
 Removes the cache of all contents.

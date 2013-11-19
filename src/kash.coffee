@@ -12,6 +12,9 @@ kash.set = (key, value, milliseconds) ->
 kash.get = (key) ->
   store[key] or null
 
+kash.del = (key) ->
+  delete store[key]
+
 kash.flush = ->
   store = {}
 
