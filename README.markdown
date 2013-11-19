@@ -2,6 +2,10 @@
 
 #### Fast and efficient in-memory caching for JavaScript
 
+## Benchmarks
+
+<img src="https://photos-5.dropbox.com/t/0/AAC8tcXRw6AQ4GZZsXnRoQY_R0zFy6a3tEfzQPpwvqbePQ/12/22769267/png/1024x768/3/1384894800/0/2/ZRqNGhcM8FoE29Xmi5Dnqjv6APGyvLQgxOnANOZ8Mvo.png/NB9WyHlOZTh_b3JlD8HLjsVi64NegP4pNphxQBe8bzo" />
+
 ## Installation
 
 Using [`npm`](http://npmjs.org/):
