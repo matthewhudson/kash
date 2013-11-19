@@ -3,6 +3,13 @@
   "version": "0.0.5",
   "homepage": "https://github.com/matthewhudson/kash",
   "description": "Fast and efficient in-memory caching.",
+  "keywords": [
+    "cache",
+    "caching",
+    "ram",
+    "memory",
+    "storage"
+  ],
   "author": {
     "name": "Matthew Hudson",
     "email": "matthud@gmail.com"
