@@ -1,8 +1,6 @@
-# KASH
+# KASH [![NPM version](https://badge.fury.io/js/kash.png)](http://badge.fury.io/js/kash) [![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
 
 #### Fast and efficient in-memory caching for JavaScript
-
-[![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
 
 ## Benchmarks
 
