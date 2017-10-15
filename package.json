@@ -1,8 +1,8 @@
 {
   "name": "kash",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "homepage": "https://github.com/matthewhudson/kash",
-  "description": "Fast and efficient in-memory caching.",
+  "description": "Fast and simple in-memory caching.",
   "keywords": [
     "cache",
     "caching",
@@ -22,17 +22,16 @@
     "url": "https://github.com/matthewhudson/kash/issues"
   },
   "devDependencies": {
-    "vows": "~0.7.0",
-    "benchmark": "latest",
-    "coffee-script": "latest",
-    "grunt": "latest",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.1",
-    "grunt-bumpup": "~0.2.0"
+    "benchmark": "2.1.4",
+    "nwb": "0.19.0"
+  },
+  "scripts": {
+    "build": "nwb build-web-module",
+    "clean": "nwb clean-module",
+    "test": "nwb test",
+    "test:coverage": "nwb test --coverage",
+    "test:watch": "nwb test --server"
   },
   "main": "./lib/kash",
-  "scripts": {
-    "test": "vows tests/suite.coffee --spec"
-  },
   "license": "MIT"
 }
