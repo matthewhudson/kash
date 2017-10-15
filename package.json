@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "homepage": "https://github.com/matthewhudson/kash",
   "description": "Fast and simple in-memory caching.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
   "keywords": [
     "cache",
     "caching",
@@ -32,6 +39,5 @@
     "test:coverage": "nwb test --coverage",
     "test:watch": "nwb test --server"
   },
-  "main": "./lib/kash",
   "license": "MIT"
 }

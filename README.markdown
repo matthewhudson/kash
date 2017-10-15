@@ -1,30 +1,23 @@
 # KASH [![NPM version](https://badge.fury.io/js/kash.png)](http://badge.fury.io/js/kash) [![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
 
-#### Fast and simple in-memory caching for JavaScript
-
 ## Benchmarks
 
 <img src="https://i.imgur.com/QIlOZhY.png" />
 
 _Benchmarks run on an early 2013 Macbook Pro: 2.7 GHz Intel Core i7, and 16 GB 1600 MHz DDR3_
 
+## What?
 
-What?
------
+Fast and simple in-memory caching.
 
-Notifies your app when the network connection goes online or offline.
+## Why?
 
-Why?
-----
-
-Because the next billion users of the internet will have a decent device but a spotty connection. Having a component to help you declaratively deal with that is super fantastic.
+Because sometimes you need straight-forward, reliable, and low-latency caching.
 
 ## Installation
 
 ```bash
 npm install kash
-# or
-yarn add kash
 ```
 
 And then import it:
@@ -103,4 +96,4 @@ Get the number of entries in the cache.
 
 Released under MIT license.
 
-Copyright &copy; 2017-present Matthew Hudson
+Copyright &copy; 2013-present Matthew Hudson
