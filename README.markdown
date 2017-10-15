@@ -1,5 +1,7 @@
 # KASH [![NPM version](https://badge.fury.io/js/kash.png)](http://badge.fury.io/js/kash) [![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/matthewhudson/kash.svg)](https://greenkeeper.io/)
+
 ## Benchmarks
 
 <img src="https://i.imgur.com/QIlOZhY.png" />
