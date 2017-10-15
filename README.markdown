@@ -1,25 +1,48 @@
 # KASH [![NPM version](https://badge.fury.io/js/kash.png)](http://badge.fury.io/js/kash) [![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
 
-#### Fast and efficient in-memory caching for JavaScript
-
 ## Benchmarks
 
 <img src="https://i.imgur.com/QIlOZhY.png" />
 
 _Benchmarks run on an early 2013 Macbook Pro: 2.7 GHz Intel Core i7, and 16 GB 1600 MHz DDR3_
 
+## What?
+
+Fast and simple in-memory caching.
+
+## Why?
+
+Because sometimes you need straight-forward, reliable, and low-latency caching.
+
 ## Installation
 
-Using [`npm`](http://npmjs.org/):
-
-``` sh
-$ npm [-g] install kash
+```bash
+npm install kash
 ```
 
-In [Node.js](http://nodejs.org/):
+And then import it:
 
-``` javascript
-var kash = require("kash");
+```js
+// using es modules
+import kash from 'kash'
+
+// common.js
+const kash = require('kash').default
+
+// AMD
+// I've forgotten but it should work.
+```
+
+Or use script tags and globals.
+
+```html
+<script src="https://unpkg.com/kash"></script>
+```
+
+And then grab it off the global like so:
+
+```js
+const kash = kash.default
 ```
 
 ## Synopsis
@@ -67,4 +90,10 @@ Get the number of entries in the cache.
 
 | [![twitter/matthewgh](http://gravatar.com/avatar/e0f8435a3df533d64b09b8aee394b8d3?s=85)](https://twitter.com/matthewgh "Follow @matthewgh on Twitter") |
 |---|
-| [Matthew Hudson](http://matthewhudson.me/) |
+| [Matthew Hudson](http://thematthewhudson.com/) |
+
+## Legal
+
+Released under MIT license.
+
+Copyright &copy; 2013-present Matthew Hudson
