@@ -2,11 +2,12 @@ let store = {};
 
 const kash = {};
 
-kash.set = function(key, value, milliseconds) {
-  if ((store[key] === null)) {
+kash.set = (key, value, milliseconds = 2000) => {
+  if (!store[key]) {
     store[key] = value;
-    return setTimeout(() => delete store[key]
-    , (milliseconds || 2000));
+    setTimeout(() => {
+      delete store[key]
+    }, milliseconds);
   }
 };
 
