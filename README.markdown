@@ -1,7 +1,12 @@
 # kash
 [![NPM version](https://badge.fury.io/js/kash.svg)](http://badge.fury.io/js/kash)
 [![Build Status](https://travis-ci.org/matthewhudson/kash.svg?branch=master)](https://travis-ci.org/matthewhudson/kash)
+[![Code Coverage](https://img.shields.io/codecov/c/github/matthewhudson/kash.svg)](https://img.shields.io/codecov/c/github/matthewhudson/kash.svg)
+[![Downloads](https://img.shields.io/npm/dt/kash.svg)](https://img.shields.io/npm/dt/kash.svg)
 [![Greenkeeper badge](https://badges.greenkeeper.io/matthewhudson/kash.svg)](https://greenkeeper.io/)
+[![License](https://img.shields.io/npm/l/kash.svg)](https://img.shields.io/npm/l/kash.svg)
+
+[![Beerpay](https://img.shields.io/beerpay/matthewhudson/kash.svg)](https://img.shields.io/beerpay/matthewhudson/kash.svg)
 
 ## What?
 
