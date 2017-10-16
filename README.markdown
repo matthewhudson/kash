@@ -1,12 +1,7 @@
-# KASH [![NPM version](https://badge.fury.io/js/kash.png)](http://badge.fury.io/js/kash) [![Build Status](https://travis-ci.org/matthewhudson/kash.png?branch=master)](https://travis-ci.org/matthewhudson/kash)
-
+# kash
+[![NPM version](https://badge.fury.io/js/kash.svg)](http://badge.fury.io/js/kash)
+[![Build Status](https://travis-ci.org/matthewhudson/kash.svg?branch=master)](https://travis-ci.org/matthewhudson/kash)
 [![Greenkeeper badge](https://badges.greenkeeper.io/matthewhudson/kash.svg)](https://greenkeeper.io/)
-
-## Benchmarks
-
-<img src="https://i.imgur.com/QIlOZhY.png" />
-
-_Benchmarks run on an early 2013 Macbook Pro: 2.7 GHz Intel Core i7, and 16 GB 1600 MHz DDR3_
 
 ## What?
 
@@ -18,13 +13,13 @@ Because sometimes you need straight-forward, reliable, and low-latency caching.
 
 ## Installation
 
-```bash
+``` sh
 npm install kash
 ```
 
 And then import it:
 
-```js
+``` js
 // using es modules
 import kash from 'kash'
 
@@ -37,19 +32,19 @@ const kash = require('kash').default
 
 Or use script tags and globals.
 
-```html
+``` html
 <script src="https://unpkg.com/kash"></script>
 ```
 
 And then grab it off the global like so:
 
-```js
+``` js
 const kash = kash.default
 ```
 
 ## Synopsis
 
-``` javascript
+``` js
 setTimeout(function() {
   console.log(kash.get('foo'));
 }, 101);

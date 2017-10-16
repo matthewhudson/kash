@@ -1,6 +1,6 @@
 {
   "name": "kash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/matthewhudson/kash",
   "description": "Fast and simple in-memory caching.",
   "main": "lib/index.js",
