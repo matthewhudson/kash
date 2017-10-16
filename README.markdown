@@ -94,3 +94,8 @@ Get the number of entries in the cache.
 Released under MIT license.
 
 Copyright &copy; 2013-present Matthew Hudson
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/matthewhudson/kash/badge.svg?style=beer-square)](https://beerpay.io/matthewhudson/kash)  [![Beerpay](https://beerpay.io/matthewhudson/kash/make-wish.svg?style=flat-square)](https://beerpay.io/matthewhudson/kash?focus=wish)
