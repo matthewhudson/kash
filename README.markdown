@@ -1,12 +1,11 @@
 # kash
-[![NPM version](https://badge.fury.io/js/kash.svg)](http://badge.fury.io/js/kash)
+
+[![NPM version](https://img.shields.io/npm/v/kash.svg)](https://npmjs.com/package/kash)
 [![Build Status](https://travis-ci.org/matthewhudson/kash.svg?branch=master)](https://travis-ci.org/matthewhudson/kash)
 [![Code Coverage](https://img.shields.io/codecov/c/github/matthewhudson/kash.svg)](https://img.shields.io/codecov/c/github/matthewhudson/kash.svg)
 [![Downloads](https://img.shields.io/npm/dt/kash.svg)](https://img.shields.io/npm/dt/kash.svg)
-[![Greenkeeper badge](https://badges.greenkeeper.io/matthewhudson/kash.svg)](https://greenkeeper.io/)
+[![Renovate badge](https://badges.renovateapi.com/github/matthewhudson/kash)](https://renovatebot.com/)
 [![License](https://img.shields.io/npm/l/kash.svg)](https://img.shields.io/npm/l/kash.svg)
-
-[![Beerpay](https://img.shields.io/beerpay/matthewhudson/kash.svg)](https://img.shields.io/beerpay/matthewhudson/kash.svg)
 
 ## What?
 
@@ -18,18 +17,18 @@ Because sometimes you need straight-forward, reliable, and low-latency caching.
 
 ## Installation
 
-``` sh
+```sh
 npm install kash
 ```
 
 And then import it:
 
-``` js
+```js
 // using es modules
-import kash from 'kash'
+import kash from "kash";
 
 // common.js
-const kash = require('kash').default
+const kash = require("kash").default;
 
 // AMD
 // I've forgotten but it should work.
@@ -37,31 +36,31 @@ const kash = require('kash').default
 
 Or use script tags and globals.
 
-``` html
+```html
 <script src="https://unpkg.com/kash"></script>
 ```
 
 And then grab it off the global like so:
 
-``` js
-const kash = kash.default
+```js
+const kash = kash.default;
 ```
 
 ## Synopsis
 
-``` js
+```js
 setTimeout(function() {
-  console.log(kash.get('foo'));
+  console.log(kash.get("foo"));
 }, 101);
 
-kash.set('foo', 'bar', 100);
+kash.set("foo", "bar", 100);
 
-console.log(kash.get('foo'));
+console.log(kash.get("foo"));
 ```
 
 Will print the following in the console:
 
-``` sh
+```sh
 bar
 null
 ```
@@ -91,9 +90,5 @@ Get the number of entries in the cache.
 ## Author
 
 | [![twitter/matthewgh](http://gravatar.com/avatar/e0f8435a3df533d64b09b8aee394b8d3?s=85)](https://twitter.com/matthewgh "Follow @matthewgh on Twitter") |
-|---|
-| [Matthew Hudson](http://thematthewhudson.com/) |
-
-## Support on Beerpay
-
-[![Beerpay](https://beerpay.io/matthewhudson/kash/badge.svg?style=beer-square)](https://beerpay.io/matthewhudson/kash)  [![Beerpay](https://beerpay.io/matthewhudson/kash/make-wish.svg?style=flat-square)](https://beerpay.io/matthewhudson/kash?focus=wish)
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Matthew Hudson](http://thematthewhudson.com/)                                                                                                         |  |
