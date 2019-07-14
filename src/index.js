@@ -1,22 +1,22 @@
-let store = {};
+let store = {}
 
-const kash = {};
+const kash = {}
 
 kash.set = (key, value, milliseconds = 2000) => {
   if (!store[key]) {
-    store[key] = value;
+    store[key] = value
     setTimeout(() => {
       delete store[key]
-    }, milliseconds);
+    }, milliseconds)
   }
-};
+}
 
-kash.get = key => store[key] || null;
+kash.get = key => store[key] || null
 
-kash.del = key => delete store[key];
+kash.del = key => delete store[key]
 
-kash.flush = () => store = {};
+kash.flush = () => (store = {})
 
-kash.size = () => Object.keys(store).length;
+kash.size = () => Object.keys(store).length
 
-export default kash;
+module.exports = kash

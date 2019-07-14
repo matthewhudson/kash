@@ -17,6 +17,14 @@
     "memory",
     "storage"
   ],
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "aftereach",
+      "beforeeach"
+    ]
+  },
   "author": {
     "name": "Matthew Hudson",
     "email": "matthud@gmail.com"
@@ -30,9 +38,11 @@
   },
   "devDependencies": {
     "benchmark": "2.1.4",
+    "mocha": "6.1.4",
     "nwb": "0.23.0"
   },
   "scripts": {
+    "bench": "node tests/index-benchmark.js",
     "build": "nwb build-web-module",
     "clean": "nwb clean-module",
     "test": "nwb test",
