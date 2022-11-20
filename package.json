@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "benchmark": "2.1.4",
-    "nwb": "0.23.0"
+    "nwb": "0.24.6"
   },
   "scripts": {
     "build": "nwb build-web-module",
