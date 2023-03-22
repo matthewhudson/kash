@@ -1,41 +1,41 @@
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
-import { terser } from "rollup-plugin-terser";
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import { terser } from 'rollup-plugin-terser'
 
-const input = "src/index.js";
+const input = 'src/index.js'
 
-const plugins = [resolve(), commonjs(), terser()];
+const plugins = [resolve(), commonjs(), terser()]
 
 // Add any external dependencies that shouldn't be bundled
-const external = [];
+const external = []
 
 export default [
   {
     input,
     output: {
-      file: "dist/cjs/bundle.js",
-      format: "cjs",
+      file: 'dist/cjs/bundle.js',
+      format: 'cjs'
     },
     plugins,
-    external,
+    external
   },
   {
     input,
     output: {
-      file: "dist/esm/bundle.js",
-      format: "esm",
+      file: 'dist/esm/bundle.js',
+      format: 'esm'
     },
     plugins,
-    external,
+    external
   },
   {
     input,
     output: {
-      file: "dist/browser/bundle.js",
-      format: "umd",
-      name: "kash", // Replace this with a global variable name for your module
+      file: 'dist/browser/bundle.js',
+      format: 'umd',
+      name: 'kash' // Replace this with a global variable name for your module
     },
     plugins,
-    external,
-  },
-];
+    external
+  }
+]
