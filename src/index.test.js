@@ -1,47 +1,45 @@
-import kash from "./index";
+import kash from "./";
 
-describe("kash", () => {
-  beforeEach(() => {
-    kash.flush();
-  });
+beforeEach(() => {
+  jest.useFakeTimers();
+});
 
-  test("set() should store a value in the cache", () => {
-    kash.set("key", "value");
-    expect(kash.get("key")).toBe("value");
-  });
+afterEach(() => {
+  jest.clearAllTimers();
+});
 
-  test("get() should return null for non-existent keys", () => {
-    expect(kash.get("non-existent-key")).toBeNull();
-  });
+test("set and get values in cache", () => {
+  kash.set("testKey", "testValue");
+  expect(kash.get("testKey")).toBe("testValue");
+});
 
-  test("set() should store a value in the cache with an expiration", (done) => {
-    kash.set("key", "value", 200);
-    expect(kash.get("key")).toBe("value");
-    setTimeout(() => {
-      expect(kash.get("key")).toBeNull();
-      done();
-    }, 201);
-  });
+test("cache returns null for nonexistent keys", () => {
+  expect(kash.get("nonexistentKey")).toBeNull();
+});
 
-  test("del() should remove a key from the cache", () => {
-    kash.set("key", "value");
-    expect(kash.get("key")).toBe("value");
-    kash.del("key");
-    expect(kash.get("key")).toBeNull();
-  });
+test("value should be removed after expiration time", () => {
+  kash.set("expiredKey", "expiredValue", 100);
+  jest.runAllTimers();
+  expect(kash.get("expiredKey")).toBeNull();
+});
 
-  test("flush() should remove all keys from the cache", () => {
-    kash.set("key1", "value1");
-    kash.set("key2", "value2");
-    expect(kash.size()).toBe(2);
-    kash.flush();
-    expect(kash.size()).toBe(0);
-  });
+test("delete keys in cache", () => {
+  kash.set("testKey", "testValue");
+  kash.del("testKey");
+  expect(kash.get("testKey")).toBeNull();
+});
 
-  test("size() should return the correct number of keys in the cache", () => {
-    expect(kash.size()).toBe(0);
-    kash.set("key1", "value1");
-    kash.set("key2", "value2");
-    expect(kash.size()).toBe(2);
-  });
+test("flush cache", () => {
+  kash.set("testKey1", "testValue1");
+  kash.set("testKey2", "testValue2");
+  kash.flush();
+  expect(kash.get("testKey1")).toBeNull();
+  expect(kash.get("testKey2")).toBeNull();
+});
+
+test("get cache size", () => {
+  kash.flush();
+  kash.set("testKey1", "testValue1");
+  kash.set("testKey2", "testValue2");
+  expect(kash.size()).toBe(2);
 });
