@@ -1,10 +1,8 @@
-# kash 🚀🎉
+# KASH 🚀🎉
 
-[![NPM version](https://img.shields.io/npm/v/kash.svg)](https://npmjs.com/package/kash)
-[![Build Status](https://travis-ci.org/matthewhudson/kash.svg?branch=master)](https://travis-ci.org/matthewhudson/kash)
-[![Code Coverage](https://img.shields.io/codecov/c/github/matthewhudson/kash.svg)](https://img.shields.io/codecov/c/github/matthewhudson/kash.svg)
+[![NPM Version](https://img.shields.io/npm/v/kash.svg)](https://npmjs.com/package/kash)
+[![Code Coverage](https://codecov.io/gh/matthewhudson/kash/branch/master/graph/badge.svg?token=dznrRZtztn)](https://codecov.io/gh/matthewhudson/kash)
 [![Downloads](https://img.shields.io/npm/dt/kash.svg)](https://img.shields.io/npm/dt/kash.svg)
-[![Renovate badge](https://badges.renovateapi.com/github/matthewhudson/kash)](https://renovatebot.com/)
 [![License](https://img.shields.io/npm/l/kash.svg)](https://img.shields.io/npm/l/kash.svg)
 
 ## What?  🤔
