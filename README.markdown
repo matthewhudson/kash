@@ -1,7 +1,7 @@
 # KASH 🚀🎉
 
 [![NPM Version](https://img.shields.io/npm/v/kash.svg)](https://npmjs.com/package/kash)
-[![Code Coverage](https://codecov.io/gh/matthewhudson/kash/branch/master/graph/badge.svg?token=dznrRZtztn)](https://codecov.io/gh/matthewhudson/kash)
+[![Code Coverage](https://codecov.io/gh/matthewhudson/kash/branch/main/graph/badge.svg?token=dznrRZtztn)](https://codecov.io/gh/matthewhudson/kash)
 [![Downloads](https://img.shields.io/npm/dt/kash.svg)](https://img.shields.io/npm/dt/kash.svg)
 [![License](https://img.shields.io/npm/l/kash.svg)](https://img.shields.io/npm/l/kash.svg)
 
