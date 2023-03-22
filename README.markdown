@@ -1,4 +1,4 @@
-# kash
+# kash 🚀🎉
 
 [![NPM version](https://img.shields.io/npm/v/kash.svg)](https://npmjs.com/package/kash)
 [![Build Status](https://travis-ci.org/matthewhudson/kash.svg?branch=master)](https://travis-ci.org/matthewhudson/kash)
@@ -7,15 +7,15 @@
 [![Renovate badge](https://badges.renovateapi.com/github/matthewhudson/kash)](https://renovatebot.com/)
 [![License](https://img.shields.io/npm/l/kash.svg)](https://img.shields.io/npm/l/kash.svg)
 
-## What?
+## What?  🤔
 
-Fast and simple in-memory caching.
+Fast and simple in-memory caching. 🏎️💨
 
-## Why?
+## Why? 🎯
 
-Because sometimes you need straight-forward, reliable, and low-latency caching.
+Because sometimes you need straight-forward, reliable, and low-latency caching. ⚡
 
-## Installation
+## Installation 📦
 
 ```sh
 npm install kash
@@ -28,7 +28,7 @@ And then import it:
 import kash from "kash";
 
 // common.js
-const kash = require("kash").default;
+const kash = require("kash");
 
 // AMD
 // I've forgotten but it should work.
@@ -46,7 +46,7 @@ And then grab it off the global like so:
 const kash = kash.default;
 ```
 
-## Synopsis
+## Synopsis 📖
 
 ```js
 setTimeout(function() {
@@ -65,19 +65,19 @@ bar
 null
 ```
 
-## API
+## API 🛠️
 
-### kash.set(key, value [, expires ])
+### kash.set(key, value [, expiration ])
 
-Set a `key` with a `value`. Set `expires` to remove from cache after specified number of milliseconds. Defaults to `2000` ms.
+Set a key with a value. Set expiration to remove from cache after the specified number of milliseconds. Defaults to 2000 ms.
 
 ### kash.get(key)
 
-Retrieve the `value` for the specified `key`. Returns `null` if `key` does not exist.
+Retrieve the value for the specified key. Returns null if key does not exist.
 
 ### kash.del(key)
 
-Deletes a `key`.
+Deletes a key.
 
 ### kash.flush()
 
