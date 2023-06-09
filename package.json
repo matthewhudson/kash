@@ -30,7 +30,7 @@
     "url": "https://github.com/matthewhudson/kash/issues"
   },
   "devDependencies": {
-    "@babel/core": "7.21.3",
+    "@babel/core": "7.22.5",
     "@babel/preset-env": "7.20.2",
     "babel-jest": "29.5.0",
     "benchmark": "2.1.4",
