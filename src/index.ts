@@ -1,5 +1,14 @@
 /** Cache module */
-const kash = {
+interface Kash {
+  cacheStore: Record<string, unknown>;
+  set(key: string, value: unknown, expiration?: number): void;
+  get(key: string): unknown;
+  del(key: string): boolean;
+  flush(): void;
+  size(): number;
+}
+
+const kash: Kash = {
   /** Cache store */
   cacheStore: {},
 
@@ -9,7 +18,7 @@ const kash = {
    * @param {*} value - The value of the item to store.
    * @param {number} [expiration=2000] - The expiration time in milliseconds (default: 2000).
    */
-  set (key, value, expiration = 2000) {
+  set (key: string, value: unknown, expiration: number = 2000) {
     if (!this.cacheStore[key]) {
       this.cacheStore[key] = value
       setTimeout(() => {
@@ -23,7 +32,7 @@ const kash = {
    * @param {string} key - The key of the item to retrieve.
    * @returns {*} The value of the item or null if not found.
    */
-  get (key) {
+  get (key: string) {
     return this.cacheStore[key] || null
   },
 
@@ -32,7 +41,7 @@ const kash = {
    * @param {string} key - The key of the item to delete.
    * @returns {boolean} True if the item was deleted, false otherwise.
    */
-  del (key) {
+  del (key: string) {
     return delete this.cacheStore[key]
   },
 
@@ -53,4 +62,4 @@ const kash = {
 }
 
 // Exporting as default because this module is simple and will only have one export.
-export default kash
+export = kash
